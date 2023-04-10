@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build:js && npm run build:css",
+    "build:js": "browserify src/client.js -o public/client.js",
+    "build:css": "node-sass src/style.scss public/style.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon src/app.js"
   },
