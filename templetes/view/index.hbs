@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- ---------------- boots link---------------------------------- -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+  </head>
+
+  <body class="body">
+    <nav class="navbar">
+      <div style="display: inline-flex;margin-left:40%">
+        <img class="logo" src="image/chatcoin.png" alt="" srcset="" />
+        <h3 class="heading">Chat With your Friends</h3>
+      </div>
+    </nav>
+    <div class="container">
+      {{! <div class="message right">Hii i am</div>
+      <div class="message left">Hii i am</div> }}
+    </div>
+    <div class="send">
+      <form action="#" id="send-container">
+        <input
+          class="messageInp"
+          type="text"
+          name="messageInp"
+          id="messageInp"
+        />
+        <button type="submit" class="btn btn-success btn-lg">Send</button>
+      </form>
+    </div>
+    <script src="http://localhost:3000/socket.io/socket.io.js "></script>
+    <script src="client.js"></script>
+  </body>
+</html>
